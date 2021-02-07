@@ -4,12 +4,15 @@
   "description": "A library for vietnamese string",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "string",
     "vietnamese"
   ],
   "author": "Trong Hieu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
