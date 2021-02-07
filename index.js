@@ -1,0 +1,1 @@
+module.exports.numToStr = require('./src/numToStr');
