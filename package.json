@@ -1,10 +1,11 @@
 {
   "name": "vn-str",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vietnamese string processing library.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -13,13 +14,8 @@
   "keywords": [
     "string",
     "vietnamese",
-    "remove",
-    "vietnamese",
-    "tones",
-    "number",
-    "to",
-    "string",
-    "vietnamese"
+    "remove tones",
+    "number to string"
   ],
   "author": "Trong Hieu <tronghieu60s@gmail.com>",
   "license": "ISC",
@@ -28,6 +24,10 @@
   },
   "homepage": "https://github.com/tronghieu60s/vn-str#readme",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "jest": "^26.6.3",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   }
 }
