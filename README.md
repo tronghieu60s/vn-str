@@ -1,6 +1,6 @@
 ## What is this?
 
-A library perfect
+✂ Vietnamese string processing library.
 
 ## Installation
 
@@ -45,3 +45,8 @@ var vnStr = require('vn-str');
 var str = vnStr.rmNonAlphanumeric("Anh ta đã sưu tập nhiều các đồ vật kỳ lạ: trứng chim, tem, nắp chai, dây và cúc áo.");
 console.log(str); // => "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ trứng chim tem nắp chai dây và cúc áo"
 ```
+
+## Contributing
+Pull requests and stars are highly welcome.
+
+For bugs and feature requests, please create an issue.
