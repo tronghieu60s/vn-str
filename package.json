@@ -1,17 +1,32 @@
 {
   "name": "vn-str",
-  "version": "1.0.2",
-  "description": "A library for vietnamese string",
+  "version": "0.0.1",
+  "description": "Vietnamese string processing library.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tronghieu60s/vn-str.git"
+  },
   "keywords": [
+    "string",
+    "vietnamese",
+    "remove",
+    "vietnamese",
+    "tones",
+    "number",
+    "to",
     "string",
     "vietnamese"
   ],
-  "author": "Trong Hieu",
+  "author": "Trong Hieu <tronghieu60s@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tronghieu60s/vn-str/issues"
+  },
+  "homepage": "https://github.com/tronghieu60s/vn-str#readme",
   "devDependencies": {
     "jest": "^26.6.3"
   }
