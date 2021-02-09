@@ -16,13 +16,13 @@ $ yarn add vn-str
 ```
 
 ## Usage
-### 1. Number To String Vietnamese
+### 1. Number To Text Vietnamese
 
 Example:
 
 ```js
 var vnStr = require('vn-str');
-var str = vnStr.numToStr(54);
+var str = vnStr.numToText(54);
 console.log(str); // => "năm mươi tư"
 ```
 
