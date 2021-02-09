@@ -7,6 +7,9 @@
     "test": "jest",
     "build": "webpack"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tronghieu60s/vn-str.git"
@@ -14,8 +17,9 @@
   "keywords": [
     "string",
     "vietnamese",
-    "remove tones",
-    "number to string"
+    "number-to-text",
+    "remove-vietnamese-tones",
+    "remove-non-alphanumeric"
   ],
   "author": "Trong Hieu <tronghieu60s@gmail.com>",
   "license": "ISC",

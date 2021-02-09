@@ -174,43 +174,41 @@ const getBillion = (number) => {
   }
 };
 
-const numToStr = (number) => {
-  try {
-    if (!Number.isInteger(number)) {
-      throw new Error("Input is not a number");
-    }
-
-    if (Math.abs(number) > 9007199254740992) {
-      throw new Error("Your number is too big");
-    }
-
-    if (number < 0) {
-      return `âm ${numToStr(Math.abs(number))}`;
-    }
-
-    const length = `${number}`.length;
-
-    if (length === 1) {
-      return base[number];
-    }
-    if (length === 2) {
-      return getTen(number);
-    }
-    if (length === 3) {
-      return getHundred(number);
-    }
-    if (length > 3 && length <= 6) {
-      return getThousand(number);
-    }
-    if (length > 6 && length <= 9) {
-      return getMillion(number);
-    }
-    if (length > 9) {
-      return getBillion(number);
-    }
-  } catch (error) {
-    console.error("error", error);
+const numToText = (number) => {
+  if (!Number.isInteger(number)) {
+    throw new Error("Input is not a number");
   }
+
+  if (Math.abs(number) > 9007199254740992) {
+    throw new Error("Your number is too big");
+  }
+
+  if (number < 0) {
+    return `âm ${numToText(Math.abs(number))}`;
+  }
+
+  const length = `${number}`.length;
+
+  if (length === 1) {
+    return base[number];
+  }
+  if (length === 2) {
+    return getTen(number);
+  }
+  if (length === 3) {
+    return getHundred(number);
+  }
+  if (length > 3 && length <= 6) {
+    return getThousand(number);
+  }
+  if (length > 6 && length <= 9) {
+    return getMillion(number);
+  }
+  if (length > 9) {
+    return getBillion(number);
+  }
+
+  return null;
 };
 
-module.exports = numToStr;
+module.exports = numToText;
