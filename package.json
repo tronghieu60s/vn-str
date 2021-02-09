@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Vietnamese string processing library.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack"

@@ -2,19 +2,19 @@ var path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./index.js",
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-  },
-  optimization: {
-    minimize: true,
+    globalObject: "this",
+    library: "vnStr",
+    libraryTarget: "umd",
   },
   module: {
     rules: [
       {
         test: /\.(js)$/,
-        exclude: /(node_modules)/,
+        exclude: /(node_modules|bower_components)/,
         use: "babel-loader",
       },
     ],
