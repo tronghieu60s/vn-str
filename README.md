@@ -46,6 +46,18 @@ var str = vnStr.rmNonAlphanumeric("Anh ta đã sưu tập nhiều các đồ v�
 console.log(str); // => "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ trứng chim tem nắp chai dây và cúc áo"
 ```
 
+### 4. Convert String Vietnamese To Unicode Telex / VNI
+```js
+var vnStr = require('vn-str');
+var str = "Trường Sa, Hoàng Sa là của Việt Nam";
+var strTelex = vnStr.strToTelex(str);
+console.log(strTelex); // => "Truwowfng Sa, Hoafng Sa laf cura Vieejt Nam"
+
+var strVNI = vnStr.strToVNI(str);
+console.log(strVNI); // => "Tru7o72ng Sa, Hoa2ng Sa la2 cu3a Vie65t Nam"
+
+```
+
 ## Contributing
 Pull requests and stars are highly welcome.
 

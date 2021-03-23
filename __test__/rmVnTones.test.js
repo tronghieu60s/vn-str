@@ -1,7 +1,7 @@
 const rmVnTones = require('../src/rmVnTones');
 
-const EXPECT_1 = "trường sa hoàng sa là của việt nam";
-const ACTUAL_1 = "truong sa hoang sa la cua viet nam";
+const EXPECT_1 = "Trường Sa, Hoàng Sa là của Việt Nam";
+const ACTUAL_1 = "Truong Sa, Hoang Sa la cua Viet Nam";
 
 test(EXPECT_1, () => {
   expect(rmVnTones(EXPECT_1).trim()).toBe(ACTUAL_1);
