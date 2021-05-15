@@ -190,22 +190,22 @@ const numToText = (number) => {
   const length = `${number}`.length;
 
   if (length === 1) {
-    return base[number];
+    return base[number].trim();
   }
   if (length === 2) {
-    return getTen(number);
+    return getTen(number).trim();
   }
   if (length === 3) {
-    return getHundred(number);
+    return getHundred(number).trim();
   }
   if (length > 3 && length <= 6) {
-    return getThousand(number);
+    return getThousand(number).trim();
   }
   if (length > 6 && length <= 9) {
-    return getMillion(number);
+    return getMillion(number).trim();
   }
   if (length > 9) {
-    return getBillion(number);
+    return getBillion(number).trim();
   }
 
   return null;
