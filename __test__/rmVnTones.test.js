@@ -1,4 +1,4 @@
-const rmVnTones = require('../src/rmVnTones');
+const { rmVnTones } = require("../dist/index");
 
 const EXPECT_1 = "Trường Sa, Hoàng Sa là của Việt Nam";
 const ACTUAL_1 = "Truong Sa, Hoang Sa la cua Viet Nam";
@@ -6,7 +6,6 @@ const ACTUAL_1 = "Truong Sa, Hoang Sa la cua Viet Nam";
 test(EXPECT_1, () => {
   expect(rmVnTones(EXPECT_1)).toBe(ACTUAL_1);
 });
-
 
 const EXPECT_2 =
   "Xây dựng cầu đường là một trong những ngành thuộc lĩnh vực xây dựng cơ bản";
@@ -16,7 +15,6 @@ const ACTUAL_2 =
 test(EXPECT_2, () => {
   expect(rmVnTones(EXPECT_2)).toBe(ACTUAL_2);
 });
-
 
 const EXPECT_3 =
   "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam";

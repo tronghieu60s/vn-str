@@ -1,4 +1,4 @@
-const strToTelex = require("../src/strToTelex");
+const { strToTelex } = require("../dist/index");
 
 const EXPECT_1 = "Việt Nam";
 const ACTUAL_1 = "Vieejt Nam";

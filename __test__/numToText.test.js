@@ -1,4 +1,4 @@
-const numToText = require("../src/numToText");
+const { numToText } = require("../dist/index");
 
 test("ba nghìn", () => {
   expect(numToText(3000)).toBe("ba nghìn");

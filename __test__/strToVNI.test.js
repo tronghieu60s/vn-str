@@ -1,4 +1,4 @@
-const strToVNI = require("../src/strToVNI");
+const { strToVNI } = require("../dist/index");
 
 const EXPECT_1 = "Việt Nam";
 const ACTUAL_1 = "Vie65t Nam";

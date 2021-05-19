@@ -1,4 +1,4 @@
-const rmNonAlphanumeric = require("../src/rmNonAlphanumeric");
+const { rmNonAlphanumeric } = require("../dist/index");
 
 const EXPECT_1 = `Khi tôi vội vàng, mệt mỏi, lạnh lùng, lười biếng hoặc tức giận, đôi khi tôi để lại dấu chấm câu.`;
 const ACTUAL_1 = `Khi tôi vội vàng mệt mỏi lạnh lùng lười biếng hoặc tức giận đôi khi tôi để lại dấu chấm câu`;
@@ -6,7 +6,6 @@ const ACTUAL_1 = `Khi tôi vội vàng mệt mỏi lạnh lùng lười biếng 
 test(EXPECT_1, () => {
   expect(rmNonAlphanumeric(EXPECT_1)).toBe(ACTUAL_1);
 });
-
 
 const EXPECT_2 = `"Ngữ pháp là ngu ngốc! Tôi có thể viết mà không cần nó,"`;
 const ACTUAL_2 = `Ngữ pháp là ngu ngốc Tôi có thể viết mà không cần nó`;
