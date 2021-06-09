@@ -15,6 +15,12 @@ Using yarn:
 $ yarn add vn-str
 ```
 
+Using CDN:
+```html
+<!-- When using CDN you can call all function in vnStr variable. -->
+<script src="https://tronghieu60s.github.io/vn-str/dist/index.js"></script>
+```
+
 ## Usage
 ### 1. Number To Text Vietnamese
 
