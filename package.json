@@ -1,6 +1,6 @@
 {
   "name": "vn-str",
-  "version": "0.0.4",
+  "version": "0.2.0",
   "description": "Vietnamese string processing library.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -22,7 +22,8 @@
     "remove-vietnamese-tones",
     "remove-non-alphanumeric",
     "str-to-telex",
-    "str-to-vni"
+    "str-to-vni",
+    "is-vietnamese-phone-number"
   ],
   "author": "Trong Hieu <tronghieu60s@gmail.com>",
   "license": "ISC",
