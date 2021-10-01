@@ -36,7 +36,7 @@ const base_hundred = [
   "chín trăm",
 ];
 
-const getTen = (number) => {
+function getTen(number: string): string {
   const array = `${number}`.split("");
   const first = parseInt(array[0]);
   const second = parseInt(array[1]);
@@ -57,9 +57,9 @@ const getTen = (number) => {
   }
 
   return `${base_ten[first - 1]} ${base[second]}`;
-};
+}
 
-const getHundred = (number) => {
+function getHundred(number: string): string {
   const array = `${number}`.split("");
   const first = parseInt(array[0]);
   const second = parseInt(array[1]);
@@ -74,9 +74,9 @@ const getHundred = (number) => {
     return `${base_hundred[first]} linh tư`;
   }
   return `${base_hundred[first]} linh ${base[third]}`;
-};
+}
 
-const getThousand = (number) => {
+function getThousand(number: string): string {
   const reverse_array = `${number}`.split("").reverse();
 
   const after_number = reverse_array.slice(0, 3).reverse().join("");
@@ -98,13 +98,13 @@ const getThousand = (number) => {
   }
 
   if (beforeLength === 2) {
-    return `${getTen(before_number)} nghìn ${afterText}`;
+    return `${getTen(`${before_number}`)} nghìn ${afterText}`;
   }
 
-  return `${getHundred(before_number)} nghìn ${afterText}`;
-};
+  return `${getHundred(`${before_number}`)} nghìn ${afterText}`;
+}
 
-const getMillion = (number) => {
+function getMillion(number: string): string {
   const reverse_array = `${number}`.split("").reverse();
   const after_number = reverse_array.slice(0, 6).reverse().join("");
   const before_number = parseInt(
@@ -124,13 +124,13 @@ const getMillion = (number) => {
   }
 
   if (beforeLength === 2) {
-    return `${getTen(before_number)} triệu ${afterText}`;
+    return `${getTen(`${before_number}`)} triệu ${afterText}`;
   }
 
-  return `${getHundred(before_number)} triệu ${afterText}`;
-};
+  return `${getHundred(`${before_number}`)} triệu ${afterText}`;
+}
 
-const getBillion = (number) => {
+function getBillion(number: string): string {
   const reverse_array = `${number}`.split("").reverse();
 
   const after_number = reverse_array.slice(0, 9).reverse().join("");
@@ -154,35 +154,27 @@ const getBillion = (number) => {
   }
 
   if (beforeLength === 2) {
-    return `${getTen(before_number)} tỷ ${afterText}`;
+    return `${getTen(`${before_number}`)} tỷ ${afterText}`;
   }
 
   if (beforeLength === 3) {
-    return `${getHundred(before_number)} tỷ ${afterText}`;
+    return `${getHundred(`${before_number}`)} tỷ ${afterText}`;
   }
 
   if (beforeLength > 3 && beforeLength <= 6) {
-    return `${getThousand(before_number)} tỷ ${afterText}`;
+    return `${getThousand(`${before_number}`)} tỷ ${afterText}`;
   }
 
   if (beforeLength > 6 && beforeLength <= 9) {
-    return `${getMillion(before_number)} tỷ ${afterText}`;
+    return `${getMillion(`${before_number}`)} tỷ ${afterText}`;
   }
 
   if (beforeLength > 9) {
-    return `${getBillion(before_number)} tỷ ${afterText}`;
+    return `${getBillion(`${before_number}`)} tỷ ${afterText}`;
   }
-};
+}
 
-const numToText = (number) => {
-  if (!Number.isInteger(number)) {
-    throw new Error("Input is not a number");
-  }
-
-  if (Math.abs(number) > 9007199254740992) {
-    throw new Error("Your number is too big");
-  }
-
+export function numToText(number: number): string {
   if (number < 0) {
     return `âm ${numToText(Math.abs(number))}`;
   }
@@ -193,22 +185,20 @@ const numToText = (number) => {
     return base[number].trim();
   }
   if (length === 2) {
-    return getTen(number).trim();
+    return getTen(`${number}`).trim();
   }
   if (length === 3) {
-    return getHundred(number).trim();
+    return getHundred(`${number}`).trim();
   }
   if (length > 3 && length <= 6) {
-    return getThousand(number).trim();
+    return getThousand(`${number}`).trim();
   }
   if (length > 6 && length <= 9) {
-    return getMillion(number).trim();
+    return getMillion(`${number}`).trim();
   }
   if (length > 9) {
-    return getBillion(number).trim();
+    return getBillion(`${number}`).trim();
   }
 
   return null;
-};
-
-module.exports = numToText;
+}

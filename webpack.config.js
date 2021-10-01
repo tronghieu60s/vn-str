@@ -2,21 +2,24 @@ var path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./index.js",
+  entry: "./index.ts",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
     globalObject: "this",
     library: "vnStr",
     libraryTarget: "umd",
+    filename: "index.js",
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(ts)$/,
+        use: "ts-loader",
         exclude: /(node_modules|bower_components)/,
-        use: "babel-loader",
       },
     ],
+  },
+  resolve: {
+    extensions: [".ts", ".js"],
   },
 };
