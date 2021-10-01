@@ -174,30 +174,30 @@ function getBillion(number: string): string {
   }
 }
 
-export function numToText(number: number): string {
-  if (number < 0) {
-    return `âm ${numToText(Math.abs(number))}`;
+export function numToText(num: number): string {
+  if (num < 0) {
+    return `âm ${numToText(Math.abs(num))}`;
   }
 
-  const length = `${number}`.length;
+  const length = `${num}`.length;
 
   if (length === 1) {
-    return base[number].trim();
+    return base[num].trim();
   }
   if (length === 2) {
-    return getTen(`${number}`).trim();
+    return getTen(`${num}`).trim();
   }
   if (length === 3) {
-    return getHundred(`${number}`).trim();
+    return getHundred(`${num}`).trim();
   }
   if (length > 3 && length <= 6) {
-    return getThousand(`${number}`).trim();
+    return getThousand(`${num}`).trim();
   }
   if (length > 6 && length <= 9) {
-    return getMillion(`${number}`).trim();
+    return getMillion(`${num}`).trim();
   }
   if (length > 9) {
-    return getBillion(`${number}`).trim();
+    return getBillion(`${num}`).trim();
   }
 
   return null;

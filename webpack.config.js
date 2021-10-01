@@ -1,4 +1,5 @@
-var path = require("path");
+const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -19,6 +20,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [new CopyWebpackPlugin({ patterns: ["./index.d.ts"] })],
   resolve: {
     extensions: [".ts", ".js"],
   },
