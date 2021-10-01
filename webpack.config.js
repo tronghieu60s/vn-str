@@ -11,6 +11,7 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
   },
+  optimization: { minimize: true },
   module: {
     rules: [
       {
@@ -21,7 +22,5 @@ module.exports = {
     ],
   },
   plugins: [new CopyWebpackPlugin({ patterns: ["./index.d.ts"] })],
-  resolve: {
-    extensions: [".ts", ".js"],
-  },
+  resolve: { extensions: [".ts", ".js"] },
 };

@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "allowJs": true,
         "module": "es6",
         "moduleResolution": "node",
         "noImplicitAny": true,
         "outDir": "./dist",
         "target": "es5",
         "typeRoots": ["node_modules/@types", "./index.d.ts"],
-    }
+    },
+    "exclude": ["**/*.d.ts", "dist", "node_modules"]
 }

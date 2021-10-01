@@ -174,6 +174,11 @@ function getBillion(number: string): string {
   }
 }
 
+/**
+ * Number To Text Vietnamese
+ * @param  {number} num
+ * @returns string
+ */
 export function numToText(num: number): string {
   if (num < 0) {
     return `âm ${numToText(Math.abs(num))}`;

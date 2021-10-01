@@ -138,6 +138,10 @@ const VN_VNI: any = {
   ỵ: "y5",
 };
 
+/**
+ * Convert String Vietnamese To Unicode Telex
+ * @param  {string} str
+ */
 export function strToTelex(str: string) {
   return str
     .split("")
@@ -145,6 +149,10 @@ export function strToTelex(str: string) {
     .join("");
 }
 
+/**
+ * Convert String Vietnamese To Unicode VNI
+ * @param  {string} str
+ */
 export function strToVNI(str: string) {
   return str
     .split("")
