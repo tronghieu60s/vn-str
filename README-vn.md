@@ -1,36 +1,35 @@
-*Read this in other languages: [Tiếng Việt](README-vn.md).*
+*Đọc bằng ngôn ngữ khác: [English](README.md).*
 
+## Đây là gì?
 
-## What is this?
+✂ Thư viện xử lí chuỗi Tiếng Việt.
 
-✂ Vietnamese string processing library.
+## Cài Đặt
 
-## Installation
-
-Using npm:
+Sử dụng npm:
 
 ```bash
 $ npm install --save vn-str
 ```
 
-Using yarn:
+Sử dụng yarn:
 
 ```bash
 $ yarn add vn-str
 ```
 
-Using CDN:
+Sử dụng CDN:
 
 ```html
-<!-- When using CDN you can call all function in vnStr variable. -->
+<!-- Khi sử dụng CDN bạn có thể gọi tất cả function bằng biến vnStr. -->
 <script src="https://tronghieu60s.github.io/vn-str/dist/index.js"></script>
 ```
 
-## Usage
+## Sử Dụng
 
-### 1. Number To Text Vietnamese
+### 1. Chuyển Số Thành Chữ Tiếng Việt
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
@@ -38,9 +37,9 @@ var str = vnStr.numToText(54);
 console.log(str); // => "năm mươi tư"
 ```
 
-### 2. Remove Vietnamese Tones
+### 2. Xóa Dấu Tiếng Việt
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
@@ -48,9 +47,9 @@ var str = vnStr.rmVnTones("trường sa hoàng sa là của việt nam");
 console.log(str); // => "truong sa hoang sa la cua viet nam"
 ```
 
-### 3. Remove Non-Alphanumeric Vietnamese Characters
+### 3. Xóa Các Ký Tự Không Phải Chữ Và Số Tiếng Việt
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
@@ -60,9 +59,9 @@ var str = vnStr.rmNonAlphanumeric(
 console.log(str); // => "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ trứng chim tem nắp chai dây và cúc áo"
 ```
 
-### 4. Convert String Vietnamese To Unicode Telex / VNI
+### 4. Chuyển Chuỗi Tiếng Việt Sang Telex / VNI
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
@@ -75,9 +74,9 @@ var strVNI = vnStr.strToVNI(str);
 console.log(strVNI); // => "Tru7o72ng Sa, Hoa2ng Sa la2 cu3a Vie65t Nam"
 ```
 
-### 5. Check Vietnamese Phone Number
+### 5. Kiểm Tra Số Điện Thoại Việt Nam
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
@@ -87,6 +86,6 @@ console.log(isVietnamesePhone); // => true
 
 ## Contributing
 
-Pull requests and stars are highly welcome.
+Pull requests và stars rất được hoan nghênh.
 
-For bugs and feature requests, please create an issue.
+Đối với bug và yêu cầu tính năng, vui lòng tạo issue.
