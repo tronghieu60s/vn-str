@@ -54,9 +54,7 @@ Example:
 
 ```js
 var vnStr = require("vn-str");
-var str = vnStr.rmNonAlphanumeric(
-  "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ: trứng chim, tem, nắp chai, dây và cúc áo."
-);
+var str = vnStr.rmNonAlphanumeric("Anh ta đã sưu tập nhiều các đồ vật kỳ lạ: trứng chim, tem, nắp chai, dây và cúc áo.");
 console.log(str); // => "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ trứng chim tem nắp chai dây và cúc áo"
 ```
 
@@ -83,6 +81,16 @@ Example:
 var vnStr = require("vn-str");
 var isVietnamesePhone = vnStr.isVietnamesePhoneNumber("+84957507468");
 console.log(isVietnamesePhone); // => true
+```
+
+### 5. Check Vietnamese Tones
+
+Example:
+
+```js
+var vnStr = require("vn-str");
+var isVietnameseTones = vnStr.isVietnameseTones("chào em, anh đứng đây từ chiều");
+console.log(isVietnameseTones); // => true
 ```
 
 ## Contributing

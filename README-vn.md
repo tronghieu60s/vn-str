@@ -84,6 +84,16 @@ var isVietnamesePhone = vnStr.isVietnamesePhoneNumber("+84957507468");
 console.log(isVietnamesePhone); // => true
 ```
 
+### 5. Kiểm Tra Dấu Tiếng Việt
+
+Example:
+
+```js
+var vnStr = require("vn-str");
+var isVietnameseTones = vnStr.isVietnameseTones("chào em, anh đứng đây từ chiều");
+console.log(isVietnameseTones); // => true
+```
+
 ## Contributing
 
 Pull requests và stars rất được hoan nghênh.
