@@ -1,6 +1,6 @@
 {
   "name": "vn-str",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Vietnamese string processing library.",
   "main": "dist/index.js",
   "module": "dist/index.js",
