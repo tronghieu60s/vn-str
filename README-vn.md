@@ -53,9 +53,7 @@ Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
-var str = vnStr.rmNonAlphanumeric(
-  "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ: trứng chim, tem, nắp chai, dây và cúc áo."
-);
+var str = vnStr.rmNonAlphanumeric("Anh ta đã sưu tập nhiều các đồ vật kỳ lạ: trứng chim, tem, nắp chai, dây và cúc áo.");
 console.log(str); // => "Anh ta đã sưu tập nhiều các đồ vật kỳ lạ trứng chim tem nắp chai dây và cúc áo"
 ```
 
@@ -84,9 +82,9 @@ var isVietnamesePhone = vnStr.isVietnamesePhoneNumber("+84957507468");
 console.log(isVietnamesePhone); // => true
 ```
 
-### 5. Kiểm Tra Dấu Tiếng Việt
+### 6. Kiểm Tra Dấu Tiếng Việt
 
-Example:
+Ví dụ:
 
 ```js
 var vnStr = require("vn-str");

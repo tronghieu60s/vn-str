@@ -1,6 +1,5 @@
 *Read this in other languages: [Tiếng Việt](README-vn.md).*
 
-
 ## What is this?
 
 ✂ Vietnamese string processing library.
@@ -83,7 +82,7 @@ var isVietnamesePhone = vnStr.isVietnamesePhoneNumber("+84957507468");
 console.log(isVietnamesePhone); // => true
 ```
 
-### 5. Check Vietnamese Tones
+### 6. Check Vietnamese Tones
 
 Example:
 
