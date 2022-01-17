@@ -25,10 +25,11 @@
     "remove-non-alphanumeric",
     "str-to-telex",
     "str-to-vni",
-    "is-vietnamese-phone-number"
+    "is-vietnamese-phone-number",
+    "is-vietnamese-tones"
   ],
   "author": "Trong Hieu <tronghieu60s@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tronghieu60s/vn-str/issues"
   },
