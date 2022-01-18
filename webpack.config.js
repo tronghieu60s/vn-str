@@ -10,7 +10,9 @@ module.exports = {
     libraryTarget: "umd",
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
+  devtool: "inline-source-map",
   optimization: { minimize: true },
   module: {
     rules: [
@@ -22,5 +24,5 @@ module.exports = {
     ],
   },
   plugins: [new CopyWebpackPlugin({ patterns: ["./index.d.ts"] })],
-  resolve: { extensions: [".ts", ".js"] },
+  resolve: { extensions: [".js", ".ts"] },
 };
