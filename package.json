@@ -1,13 +1,13 @@
 {
   "name": "vn-str",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Vietnamese string processing library.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "test": "webpack && jest",
     "build": "webpack",
-    "publish": "npm publish"
+    "publish": "webpack && npm publish"
   },
   "files": [
     "dist"
