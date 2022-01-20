@@ -43,8 +43,8 @@ Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
-var str = vnStr.rmVnTones("trường sa hoàng sa là của việt nam");
-console.log(str); // => "truong sa hoang sa la cua viet nam"
+var str = vnStr.rmVnTones("Trường Sa Hoàng Sa là của Việt Nam");
+console.log(str); // => "Truong Sa Hoang Sa la cua Viet Nam"
 ```
 
 ### 3. Xóa Các Ký Tự Không Phải Chữ Và Số Tiếng Việt
@@ -88,7 +88,7 @@ Ví dụ:
 
 ```js
 var vnStr = require("vn-str");
-var isVietnameseTones = vnStr.isVietnameseTones("chào em, anh đứng đây từ chiều");
+var isVietnameseTones = vnStr.isVietnameseTones("Chào em, anh đứng đây từ chiều");
 console.log(isVietnameseTones); // => true
 ```
 
