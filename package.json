@@ -7,7 +7,7 @@
   "scripts": {
     "test": "webpack && jest",
     "build": "webpack",
-    "publish": "webpack && yarn publish"
+    "deploy": "webpack && yarn publish"
   },
   "files": [
     "dist"
