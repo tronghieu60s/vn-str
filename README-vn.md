@@ -92,6 +92,18 @@ var isVietnameseTones = vnStr.isVietnameseTones("Chào em, anh đứng đây t�
 console.log(isVietnameseTones); // => true
 ```
 
+### 7. Kiểm Tra Câu Văn Có Từ Ngữ Xúc Phạm
+
+Dữ liệu: https://github.com/blue-eyes-vn/vietnamese-offensive-words
+
+Ví dụ:
+
+```js
+var vnStr = require("vn-str");
+var hasOffensiveWords = vnStr.hasOffensiveWords("đây là một câu bình thường, cho đến khi thêm từ chửi bậy, đm.");
+console.log(hasOffensiveWords); // => true
+```
+
 ## Contributing
 
 Pull requests và stars rất được hoan nghênh.
